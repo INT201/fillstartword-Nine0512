@@ -7,10 +7,10 @@ const { template } = require('@babel/core')
 
 function fillStartWord(startWord, word) {
   //code here
-  if (word.includes(startWord)) {
-    return word
-  } else if (word === undefined || word === null) {
+  if (word === undefined || word === null) {
     return undefined
+  } else if (word.includes(startWord)) {
+    return word
   } else {
     return startWord + word
   }
